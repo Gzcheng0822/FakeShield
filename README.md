@@ -1,5 +1,10 @@
 # How to Run FakeShield locally
 
+Python==3.10
+CUDA==11.8
+Pytorch==2.1.2
+
+
 ## Install Conda
 
 ### Download Conda Install sh
