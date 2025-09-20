@@ -9,8 +9,6 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh Miniconda3-latest-Linux-x86_64.sh
 ```
 
-
-
 ### Accept License
 
 ```
@@ -147,10 +145,10 @@ wget https://huggingface.co/ybelkada/segment-anything/resolve/main/checkpoints/s
 ### Modify `scripts/cli_demo.sh` :
 
 ```
-WEIGHT_PATH=/home/gzcheng/project/FakeShield/weight/fakeshield-v1-22b
-IMAGE_PATH=/home/gzcheng/project/FakeShield/playground/images/Sp_D_CND_A_pla0005_pla0023_0281.jpg
-DTE_FDM_OUTPUT=/home/gzcheng/project/FakeShield/playground/DTE-FDM_output.jsonl
-MFLM_OUTPUT=/home/gzcheng/project/FakeShield/playground/MFLM_output
+WEIGHT_PATH=weight/fakeshield-v1-22b
+IMAGE_PATH=playground/images/Sp_D_CND_A_pla0005_pla0023_0281.jpg
+DTE_FDM_OUTPUT=playground/DTE-FDM_output.jsonl
+MFLM_OUTPUT=playground/MFLM_output
 
 pip install -q transformers==4.37.2 > /dev/null 2>&1
 
@@ -214,5 +212,4 @@ rm -rf FakeShield
 conda activate base
 conda env remove -n FakeShield --all
 ```
-
 
